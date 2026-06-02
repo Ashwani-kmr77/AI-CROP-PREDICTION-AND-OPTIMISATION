@@ -1,0 +1,94 @@
+.navbar {
+  width: 100%;
+  background: rgba(22, 101, 52, 0.95);
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  opacity: 0.95;
+  transition: 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.nav-btn {
+  background: white;
+  color: #14532d;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background: #dcfce7;
+}
+
+.user-badge {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: white;
+  color: #14532d;
+}
+
+.btn-primary:hover {
+  background: #dcfce7;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 18px;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .nav-left,
+  .nav-right {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
